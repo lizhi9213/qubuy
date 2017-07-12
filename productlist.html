@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/productlist.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>空调比价选购，空调推荐哪个好 -- 趣买手机版</title>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="clearfix">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="首页"/></a></div>
+    <div class="app"><a href="#"><i class="iconfont icon-appxiazai"></i>APP下载</a></div>
+</header>
+<!--搜索-->
+<section id="search">
+    <div class="searchtxt">
+        <input type="search" name="key" id="" placeholder="请输入你想比价的商品"/>
+    </div>
+    <div class="searchbtn">
+        <input type="button" value="搜索"/>
+    </div>
+</section>
+<!--产品列表页面-->
+<div id="product">
+    <!--分页路径导航-->
+    <div class="product-title">
+        <ol class="breadcrumb">
+            <li class="glyphicon glyphicon-menu-right"><a href="index.html">首页</a></li>
+            <li class="glyphicon glyphicon-menu-right"><a href="category.html">全部分类</a></li>
+            <li class="glyphicon glyphicon-menu-right">产品</li>
+        </ol>
+        <button type="button" class="btn btn-default btn-lg">筛选</button>
+    </div>
+    <!--商品列表-->
+    <div class="product-list">
+        <div class="load-container load4">
+            <div class="loader">Loading...</div>
+        </div>
+    </div>
+    <!--商品操作 上一页 下一页-->
+    <div class="product-option clearfix">
+        <a href="#" class="btn btn-default btn-lg ofl page-prev">上一页</a>
+        <a href="#" class="btn btn-default btn-lg ofr page-next">下一页</a>
+
+        <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                <span>1/4</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="#">1/4</a></li>
+                <li><a href="#">2/4</a></li>
+                <li><a href="#">3/4</a></li>
+                <li><a href="#">4/4</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<section id="footer">
+    <div class="login clearfix">
+        <div><a href="#" class="btn btn-info">登录</a></div>
+        <div><a href="#" class="btn btn-info">注册</a></div>
+        <div><a href="#" class="btn btn-info">反馈</a></div>
+        <div><a href="#" class="btn btn-info">回到顶部</a></div>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">趣买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>比价 · 折扣，汇聚全网最优质的商品</p>
+    </div>
+</section>
+
+<!--这里是商品列表模板-->
+<script type="text/html" id="listtmp">
+    {{if result}}
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="bijia.html?productid={{value.productId}}&categoryId={{value.categoryId}}">
+                {{#value.productImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h5 class="media-heading"><a href="bijia.html?productid={{value.productId}}&categoryId={{value.categoryId}}">{{value.productName}}</a></h5>
+
+            <p class="price">{{value.productPrice}}</p>
+            <span>{{value.productQuote}}</span>&nbsp;
+            <span>{{value.productCom}}</span>
+        </div>
+    </div>
+    {{/each}}
+    {{/if}}
+</script>
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="./js/productlist.js"></script>
+</body>
+</html>

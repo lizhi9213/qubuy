@@ -1,0 +1,305 @@
+body {
+  background-color: #f7f7f7;
+  /*头部模块*/
+  /*搜索模块*/
+  /*分类模块*/
+  /*底部模块*/
+}
+body .load4 .loader {
+  color: #20b6b1;
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+body #header {
+  height: 50px;
+  background-color: #20b6b1;
+  padding: 12px;
+}
+body #header > .logo {
+  float: left;
+}
+body #header > .logo > a {
+  display: block;
+}
+body #header > .logo > a > img {
+  height: 25px;
+}
+body #header > .app {
+  float: right;
+  margin-top: -8px;
+}
+body #header > .app > a {
+  font-size: 8px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+}
+body #header > .app > a > i {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+body #search {
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+}
+body #search > .searchtxt {
+  width: 100%;
+  padding-right: 48px;
+}
+body #search > .searchtxt > input {
+  height: 30px;
+  width: 100%;
+  padding-left: 5%;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  font: 500 16px/30px "Microsoft Yahei";
+}
+body #search > .searchbtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+body #search > .searchbtn > input {
+  width: 63px;
+  height: 30px;
+  background-color: #20b6b1;
+  border-radius: 15px;
+  font: 500 16px/30px "Microsoft Yahei";
+  color: #FFFFFF;
+  text-align: center;
+}
+body #classify > .nav {
+  position: relative;
+}
+body #classify > .nav > .breadcrumb {
+  margin-bottom: 0;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ebebeb;
+  background: #ebebeb;
+  background: -webkit-linear-gradient(#fff, #ccc);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fff, #ccc);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fff, #ccc);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#fff, #ccc);
+  /* 标准的语法 */
+  white-space: nowrap;
+  /* 1. 强制一行内显示文本 */
+  overflow: hidden;
+  /* 2. 文字超出隐藏 */
+  text-overflow: ellipsis;
+  /*  3. 文字显示不开用省略号替代 */
+}
+body #classify > .nav > .breadcrumb > li {
+  line-height: 20px;
+  padding-right: 20px;
+  position: relative;
+  font-size: 16px;
+}
+body #classify > .nav > .breadcrumb > li:before {
+  content: "";
+  padding: 0;
+}
+body #classify > .nav > .breadcrumb > li:after {
+  content: "\e258";
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+body #classify > .nav > .breadcrumb > li > a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+}
+body #classify > .nav > .breadcrumb > li > a:hover {
+  text-decoration: none;
+}
+body #classify > .nav > .btn-default {
+  background: -webkit-linear-gradient(#fff, #ccc);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fff, #ccc);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fff, #ccc);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#fff, #ccc);
+  /* 标准的语法*/
+}
+body #classify > .nav > .btn-default:focus {
+  outline: none;
+}
+body #classify > .nav > .btn-lg {
+  letter-spacing: 3px;
+  padding: 8px 14px;
+  position: absolute;
+  font-size: 14px;
+  top: 11px;
+  right: 14px;
+  border-radius: 8px;
+}
+body #classify > h3 {
+  font-size: 16px;
+  color: #874604;
+  height: 40px;
+  padding-left: 10px;
+  line-height: 40px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+body #classify > .classlist {
+  padding: 0 10px;
+}
+body #classify > .classlist > ul > li > a {
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 16px;
+  border-bottom: 1px solid #cccccc;
+  font-weight: 600;
+}
+body #classify > .classlist > ul > li > a:hover {
+  text-decoration: none;
+}
+body #classify > .classlist > ul > li > a > span {
+  width: 40px;
+  height: 40px;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+}
+body #footer {
+  width: 100%;
+}
+body #footer > .login {
+  width: 100%;
+  margin-top: 10px;
+}
+body #footer > .login > div:nth-of-type(-n+3) {
+  display: block;
+  width: 23%;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+}
+body #footer > .login > div:nth-of-type(-n+3) .btn-info {
+  color: #999;
+  background-color: #cccccc;
+  background: linear-gradient(#f3f0f0, #cccccc);
+  border-color: #cccccc;
+}
+body #footer > .login > div:nth-of-type(-n+3) > .btn {
+  padding: 0 12px;
+}
+body #footer > .login > div:nth-of-type(-n+3) > a {
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+}
+body #footer > .login > div:nth-of-type(4) {
+  display: block;
+  width: 31%;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+}
+body #footer > .login > div:nth-of-type(4) .btn-info {
+  color: #999;
+  background-color: #cccccc;
+  background: linear-gradient(#f3f0f0, #cccccc);
+  border-color: #cccccc;
+}
+body #footer > .login > div:nth-of-type(4) > .btn {
+  padding: 0 12px;
+}
+body #footer > .login > div:nth-of-type(4) > a {
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+}
+body #footer > .footer {
+  padding: 16px 0;
+  font-size: 12px;
+  text-align: center;
+}
+body #footer > .footer > p:nth-of-type(1) {
+  color: #cccccc;
+}
+body #footer > .footer > p:nth-of-type(1) > a:nth-of-type(1) {
+  color: red;
+}

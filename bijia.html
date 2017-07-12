@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/bijia.css">
+    <!--<script type="text/javascript" src="./lib/less/less.js"></script>-->
+    <title>慢慢买比价网--手机版</title>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="clearfix">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="首页"/></a></div>
+    <div class="app"><a href="#"><i class="iconfont icon-appxiazai"></i>APP下载</a></div>
+</header>
+<!--搜索-->
+<section id="search">
+    <div class="searchtxt">
+        <input type="search" name="key" id="" placeholder="请输入你想比价的商品"/>
+    </div>
+    <div class="searchbtn">
+        <input type="button" value="搜索"/>
+    </div>
+</section>
+<!--产品比价详情部分-->
+<div id="product">
+    <!--产品详情头部-->
+    <div class="product-title">
+        <ol class="breadcrumb">
+            <li class="glyphicon glyphicon-menu-right"><a href="index.html">首页</a></li>
+            <li class="glyphicon glyphicon-menu-right"><a href="category.html">电视</a></li>
+            <li class="glyphicon glyphicon-menu-right">产品</li>
+        </ol>
+    </div>
+    <!--产品详情-->
+    <div class="product-info">
+        <!--<div class="product-bijia">-->
+            <!--<div class="product-name">-->
+                <!--&lt;!&ndash; 乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视 &ndash;&gt;-->
+            <!--</div>-->
+            <!--<div class="product-img">-->
+                <!--&lt;!&ndash; <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="170"> &ndash;&gt;-->
+            <!--</div>-->
+            <!--<div class="product-collect">-->
+                <!--<a href="javascript:setfav(473088);">-->
+                    <!--<img src="http://www.zuyushop.com/wap/images/sc.jpg" width="39" height="39"></a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="tab">-->
+            <!--<ul class="clearfix">-->
+                <!--<li class="cur col-xs-4"><a href="#">比价购买</a></li>-->
+                <!--<li class="mtab col-xs-4">-->
+                    <!--<a href="#">产品参数</a></li>-->
+                <!--<li class="col-xs-4"><a href="#" class="">评价(2322)</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="plist">-->
+            <!--<a href="redirect.aspx?webid=1&amp;bjid=76069915&amp;tourl=http://item.jd.com/1162187.html&amp;y=bijia"-->
+               <!--target="_blank" onclick="trackLog('商品购买','比价页面');">-->
+                <!--&lt;!&ndash; bjShop &ndash;&gt;-->
+            <!--</a>-->
+
+            <!--<div class="note">-->
+                <!--* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="product-com-title">-->
+            <!--<div>网友评价</div>-->
+        <!--</div>-->
+        <!--<div class="product-com-list">-->
+            <!--<div class="more">-->
+                <!--<a class="morein" href="comment.aspx?id=473088">查看更多评价</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="load-container load4">
+            <div class="loader">Loading...</div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<section id="footer">
+    <div class="login clearfix">
+        <div><a href="#" class="btn btn-info">登录</a></div>
+        <div><a href="#" class="btn btn-info">注册</a></div>
+        <div><a href="#" class="btn btn-info">反馈</a></div>
+        <div><a href="#" class="btn btn-info">回到顶部</a></div>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">趣买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>比价 · 折扣，汇聚全网最优质的商品</p>
+    </div>
+</section>
+
+<!--这里是比价商品详情模板-->
+
+<script type="text/html" id="infoTmp">
+    {{if result}}
+    {{each result as value i}}
+    <div class="product-bijia">
+        <div class="product-name">
+            <!-- 乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视 -->
+            {{value.productName}}
+        </div>
+        <div class="product-img">
+            <!-- <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="170"> -->
+            {{#value.productImg}}
+        </div>
+        <div class="product-collect">
+            <a href="javascript:setfav(473088);">
+                <img src="http://www.zuyushop.com/wap/images/sc.jpg" width="39" height="39"></a>
+        </div>
+    </div>
+    <div class="tab">
+        <ul>
+            <li class="cur col-xs-4"><a href="#">比价购买</a></li>
+            <li class="mtab col-xs-4">
+                <a href="#">产品参数</a></li>
+            <li class="col-xs-4"><a href="#" class="">评价(2322)</a></li>
+        </ul>
+    </div>
+    <div class="plist">
+        <a href="redirect.aspx?webid=1&amp;bjid=76069915&amp;tourl=http://item.jd.com/1162187.html&amp;y=bijia"
+           target="_blank" onclick="trackLog('商品购买','比价页面');">
+            <!-- bjShop -->
+            {{#value.bjShop}}
+        </a>
+
+        <div class="note">
+            * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </div>
+    </div>
+    <div class="product-com-title">
+        <div>网友评价</div>
+    </div>
+    <div class="product-com-list">
+        <div class="more">
+            <a class="morein" href="comment.aspx?id=473088">查看更多评价</a>
+        </div>
+    </div>
+    {{/each}}
+    {{/if}}
+</script>
+
+<!--这里 是评价详情模板-->
+<script type="text/html" id="appraiseTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <div class="clearfix"> <span class="pull-left com-name">{{value.comName}}             </span>
+                <span class="pull-right com-time">{{value.comTime}}               </span></div>
+            <div class="clearfix"> <span class="star pull-left com-star"><em class="star5"></em></span> <span class="pull-right com-from">                   {{value.comFrom}}                </span></div>
+            <div class="com-content">{{value.comContent}}</div>
+        </li>
+        {{/each}}
+    </ul>
+    <div class="more">
+        <a class="morein" href="comment.aspx?id=473088">查看更多评价</a>
+    </div>
+</script>
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="./js/bijia.js"></script>
+</body>
+</html>

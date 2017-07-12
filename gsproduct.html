@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <!--<script type="text/javascript" src="./lib/less/less.js"></script>-->
+    <title>
+        趣凑单--趣买比价·折扣网
+    </title>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="clearfix">
+    <h2>趣凑单</h2>
+
+    <div class="back">
+        <a href="index.html" class="glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+    </div>
+    <div class="app"><a href="#"><i class="iconfont icon-appxiazai"></i>APP下载</a></div>
+</header>
+<!--主体部分-->
+<main id="main">
+    <div class="main-head">
+        <div class="filter clearfix">
+            <ul>
+                <li><a href="#" data-shopid="0">京东<i class="triangle-down"></i></a></li>
+                <li><a href="#" data-areaid="0">华北<i class="triangle-down"></i></a></li>
+                <li><a href="#" data-priceid="0">全部价格<i class="triangle-down"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </div>
+        <div class="shoplist" id="shop">
+            <ul>
+                <!--<li><a href="#" data-shopid="0">京东<i class="glyphicon glyphicon-ok" aria-hidden="true"></i></a></li>-->
+                <!--<li><a href="#" data-shopid="1">一号店</a><i></i></li>-->
+                <!--<li><a href="#" data-shopid="2">天猫超市</a><i></i></li>-->
+            </ul>
+        </div>
+        <div class="arealist" id="area">
+            <ul>
+                <!--<li><a href="#" data-areaid="0">华南<i class="glyphicon glyphicon-ok" aria-hidden="true"></i></a></li>-->
+                <!--<li><a href="#" data-areaid="1">华南</a></li>-->
+                <!--<li><a href="#" data-areaid="2">华南</a></li>-->
+            </ul>
+        </div>
+        <div class="pricelist" id="price">
+            <ul>
+                <li><a href="#" data-priceid="0">全部价格<i class="glyphicon glyphicon-ok" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-priceid="1">1~3元</a></li>
+                <li><a href="#" data-priceid="2">3~5元</a></li>
+                <li><a href="#" data-priceid="3">5~10元</a></li>
+                <li><a href="#" data-priceid="4">10~15元</a></li>
+                <li><a href="#" data-priceid="5">15以上元</a></li>
+            </ul>
+        </div>
+        <div class="seracbox">
+            <form method="get" action="">
+                <div class="txt">
+                    <input type="search" name="key" value="" onfocus="delInput();" oninput="delInput();"
+                           class="border-img" placeholder="搜索商品即可查内部券">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+                <div class="smt">
+                    <input type="submit" value="搜索">
+                </div>
+            </form>
+            <div class="sort clearfix">
+                <h4>排序</h4>
+                <dl>
+                    <dd><a href="#">销量</a></dd>
+                    <dd class="on"><a href="#">价格↑</a></dd>
+                    <dd><a href="#">价格↓</a></dd>
+                </dl>
+            </div>
+            <div class="classify clearfix">
+                <h4>分类</h4>
+                <dl>
+                    <dd><a href="#">全部</a></dd>
+                    <dd class="on"><a href="#">家具</a></dd>
+                    <dd><a href="#">数码</a></dd>
+                    <dd><a href="#">办公</a></dd>
+                    <dd><a href="#">个护</a></dd>
+                    <dd><a href="#">食品</a></dd>
+                    <dd><a href="#">母婴</a></dd>
+                    <dd><a href="#">服饰</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="main-list">
+        <!--<ul>-->
+            <!--<li>-->
+            <!--<a href="http://item.m.jd.com/ware/view.action?wareId=1792861" class="item border-img">-->
+            <!--<div class="pic"><img-->
+            <!--src="http://img11.360buyimg.com/n1/jfs/t1468/327/1195618780/70676/4f5853ed/55c8453bNa333c0c5.jpg"-->
+            <!--style="width: 245px; height: 245px;"></div>-->
+            <!--<div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>-->
+            <!--<div class="other">-->
+            <!--<div class="price"><em>¥</em>0.01</div>-->
+            <!--<div class="btn">去凑单</div>-->
+            <!--<div class="clearfix"></div>-->
+            <!--</div>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href="http://item.m.jd.com/ware/view.action?wareId=1792861" class="item border-img">-->
+            <!--<div class="pic"><img-->
+            <!--src="http://img11.360buyimg.com/n1/jfs/t1468/327/1195618780/70676/4f5853ed/55c8453bNa333c0c5.jpg"-->
+            <!--style="width: 245px; height: 245px;"></div>-->
+            <!--<div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>-->
+            <!--<div class="other">-->
+            <!--<div class="price"><em>¥</em>0.01</div>-->
+            <!--<div class="btn">去凑单</div>-->
+            <!--<div class="clearfix"></div>-->
+            <!--</div>-->
+            <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <div class="load-container load4">
+            <div class="loader">Loading...</div>
+        </div>
+    </div>
+    <!--分页路径导航-->
+    <div class="main-nav">
+        <ol class="breadcrumb">
+            <li class="glyphicon glyphicon-menu-right"><a href="index.html">首页</a></li>
+            <li class="glyphicon glyphicon-menu-right">趣凑单</li>
+        </ol>
+    </div>
+</main>
+
+<!--底部-->
+<section id="footer">
+    <div class="login clearfix">
+        <div><a href="#" class="btn btn-info">登录</a></div>
+        <div><a href="#" class="btn btn-info">注册</a></div>
+        <div><a href="#" class="btn btn-info">反馈</a></div>
+        <div><a href="#" class="btn btn-info">回到顶部</a></div>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">趣买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>比价 · 折扣，汇聚全网最优质的商品</p>
+    </div>
+</section>
+
+<!--这里是店铺列表模板-->
+<script type="text/html" id="shoptmp">
+    {{each result as value i}}
+    <li><a href="#" data-shopid="{{value.shopId}}">{{value.shopName}}</a></li>
+    {{/each}}
+</script>
+
+<!--这里是地区列表模板-->
+<script type="text/html" id="ereatmp">
+    {{each result as value i}}
+    <li><a href="#" data-areaid="{{value.areaId}}">{{value.areaName}}</a></li>
+    {{/each}}
+</script>
+
+<!--这里是商品内容模板-->
+
+<script type="text/html" id="listtmp">
+    <ul>
+    {{each result as value i}}
+    <li>
+        <a href="http://item.m.jd.com/ware/view.action?wareId=1792861" class="item border-img">
+            <div class="pic">
+                <img src="{{value.productImg}}">
+            </div>
+            <div class="title">{{value.productName}}</div>
+            <div class="other">
+                <div class="price"><em>¥</em>{{value.productPrice}}</div>
+                <div class="btn">去凑单</div>
+                <div class="clearfix"></div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+    </ul>
+</script>
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="./js/gsproduct.js"></script>
+</body>
+</html>
